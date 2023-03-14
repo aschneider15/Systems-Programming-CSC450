@@ -46,8 +46,8 @@ int main(){
         for(int x = 0; x < width; x++) {
             int oldPixel = y * width + x;
             //0 degree rotation: int newPixel = y * width + (width - x - 1);
+            //90 degree rotation: int newPixel = x * width + y;
             //180 degree rotation: int newPixel = (width * height) - ((width * y) + x);
-            int newPixel = (width * height) - ((width * y) + x);
             for(int i = 0; i < 3; i++) {
                 int oldIndex, newIndex;
                 oldIndex = 54 + oldPixel * 3 + i;
